@@ -1,0 +1,9 @@
+name: tantalus
+l1_network: Sepolia
+link_to_code: /home/oemerfurkan/Desktop/lambdaclass-2024/zksync/tantalus/zksync-era
+chains: /home/oemerfurkan/Desktop/lambdaclass-2024/zksync/tantalus/chains
+config: /home/oemerfurkan/Desktop/lambdaclass-2024/zksync/tantalus/./configs/
+default_chain: tantalus
+era_chain_id: 270
+prover_version: Gpu
+wallet_creation: Random
