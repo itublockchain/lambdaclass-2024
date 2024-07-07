@@ -1,0 +1,22 @@
+tokens:
+  WBTC:
+    address: 0xb84511e24882d7c4021bc796229368bf066ba74e
+    name: WBTC
+    symbol: WBTC
+    decimals: 8
+    implementation: TestnetERC20Token.sol
+    mint: '0x9000000000000000000000'
+  WETH:
+    address: 0x08697daca17264e1d78f705e11359dacc8f26401
+    name: Wrapped Ether
+    symbol: WETH
+    decimals: 18
+    implementation: WETH9.sol
+    mint: '0x0'
+  DAI:
+    address: 0x9b08b43020aab24cda8de4da8e561f1977a51002
+    name: DAI
+    symbol: DAI
+    decimals: 18
+    implementation: TestnetERC20Token.sol
+    mint: '0x9000000000000000000000'
