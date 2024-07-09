@@ -1,0 +1,1 @@
+cd zksync-era && export GITHUB_WORKSPACE=https://github.com/matter-labs/zksync-era.git && export ZKSYNC_HOME=$(pwd) && export PATH=$ZKSYNC_HOME/bin:$PATH && zk && zk && zk clean --all && zk init && zk server
