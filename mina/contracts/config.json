@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "deployAliases": {
+    "deploy1": {
+      "networkId": "testnet",
+      "url": "https://api.minascan.io/node/devnet/v1/graphql",
+      "keyPath": "keys/deploy1.json",
+      "feepayerKeyPath": "/home/oemerfurkan/.cache/zkapp-cli/keys/deployer2.json",
+      "feepayerAlias": "deployer2",
+      "fee": "1",
+      "smartContract": "MerkleContract"
+    },
+    "deploy2": {
+      "networkId": "testnet",
+      "url": "https://api.minascan.io/node/devnet/v1/graphql",
+      "keyPath": "keys/deploy2.json",
+      "feepayerKeyPath": "/home/oemerfurkan/.cache/zkapp-cli/keys/deployer2.json",
+      "feepayerAlias": "deployer2",
+      "fee": "0.1",
+      "smartContract": "MerkleContract"
+    },
+    "deploy3": {
+      "networkId": "testnet",
+      "url": "https://api.minascan.io/node/devnet/v1/graphql",
+      "keyPath": "keys/deploy3.json",
+      "feepayerKeyPath": "/home/oemerfurkan/.cache/zkapp-cli/keys/deployer2.json",
+      "feepayerAlias": "deployer2",
+      "fee": "0.1",
+      "smartContract": "MerkleContract"
+    },
+    "deploy4": {
+      "networkId": "testnet",
+      "url": "https://api.minascan.io/node/devnet/v1/graphql",
+      "keyPath": "keys/deploy4.json",
+      "feepayerKeyPath": "/home/oemerfurkan/.cache/zkapp-cli/keys/deployer2.json",
+      "feepayerAlias": "deployer2",
+      "fee": "2",
+      "smartContract": "MerkleContract"
+    }
+  }
+}
