@@ -1,24 +1,28 @@
-import { SmartContract, state, State, MerkleWitness, Field } from 'o1js';
+import {
+  SmartContract,
+  state,
+  State,
+  MerkleWitness,
+  Field,
+  method,
+} from 'o1js';
 
-class MerkleWitness256 extends MerkleWitness(256) {}
-
-const EMPTY_ROOT =
-  Field(0x21afce36daa1a2d67391072035f4555a85aea7197e5830b128f121aa382770cdn);
+export class MerkleWitness256 extends MerkleWitness(256) {}
 
 export class MerkleContract extends SmartContract {
-  @state(Field) public merkleRoot = State();
+  @state(Field) merkleRoot = State<Field>();
 
   init() {
     super.init();
-    this.merkleRoot.set(EMPTY_ROOT);
+    this.merkleRoot.set(Field(22731122946631793544306773678309960639073656601863129978322145324846701682624n));
   }
 
-  public async updateMerkleRoot(
-    newMerkleRoot: Field,
-    witness: MerkleWitness256,
-    addedLeaf: Field
-  ) {
-    witness.calculateRoot(addedLeaf).assertEquals(newMerkleRoot);
-    this.merkleRoot.set(newMerkleRoot);
+  @method async updateMerkleRoot(witness: MerkleWitness256) {
+    const currentTreeRoot = this.merkleRoot.getAndRequireEquals();
+    currentTreeRoot.assertEquals(
+      witness.calculateRoot(Field(0)),
+      'Transaction added.'
+    );
+    this.merkleRoot.set(witness.calculateRoot(Field(1)));
   }
 }
