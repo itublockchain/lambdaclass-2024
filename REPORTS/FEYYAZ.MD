@@ -222,3 +222,7 @@ Bu kadar. ARTIK INSTANCE OLUŞTURMAYI OTOMATİZE EDEBİLİRSİN.
 ##### Next Steps:
 - Kendi imajlarını oluşturmak.
 
+---
+
+##### Kaynak:
+- https://docs.aws.amazon.com/cli/v1/userguide/cli-services-ec2-instances.html
